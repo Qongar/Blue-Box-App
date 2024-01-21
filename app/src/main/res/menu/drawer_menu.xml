@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recent"
+            android:title="Recent"
+            android:icon="@drawable/recent_24dpi"/>
+        <item
+            android:id="@+id/nav_social"
+            android:title="Social"
+            android:icon="@drawable/social_media_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+        <item
+            android:id="@+id/nav_mail"
+            android:title="E-mail"
+            android:icon="@drawable/e_mail_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+        <item
+            android:id="@+id/nav_credit_card"
+            android:title="Credit Cards"
+            android:icon="@drawable/debit_card_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+        <item
+            android:id="@+id/nav_computer"
+            android:title="Computer"
+            android:icon="@drawable/computer_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+        <item
+            android:id="@+id/nav_phone"
+            android:title="Phone"
+            android:icon="@drawable/phone_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+        <item
+            android:id="@+id/nav_wifi"
+            android:title="Wifi"
+            android:icon="@drawable/wifi_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+        <item
+            android:id="@+id/nav_website"
+            android:title="Website"
+            android:icon="@drawable/website_24dpi"
+            android:layout_width="64dp"
+            android:layout_height="48dp"/>
+    </group>
+
+</menu>

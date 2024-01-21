@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="20dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/rowLayout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:text="G-mail"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/img_Card"
+            android:layout_width="119dp"
+            android:layout_height="76dp"
+            android:layout_below="@+id/category_title"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="3dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/e_mail" />
+
+        <ImageView
+            android:id="@+id/img_show_pass"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_alignBottom="@+id/img_Card"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="9dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/showpass_icon" />
+
+        <TextView
+            android:id="@+id/txt_Hid_Acc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_Card"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toRightOf="@+id/img_Card"
+            android:hint="Account Name"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_Hid_Pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/img_Card"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/img_Card"
+            android:hint="Password"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_edit"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_Copy"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:onClick="txt_Btn_Pass"
+            android:text="Edit"
+            android:textAlignment="textStart"
+            android:textColor="#2C731C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_delete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_Copy"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/txt_Copy"
+            android:layout_toEndOf="@+id/txt_edit"
+            android:onClick="txt_Btn_Pass"
+            android:text="delete"
+            android:textAlignment="center"
+            android:textColor="#2C731C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_Copy"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_Card"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:onClick="txt_Btn_Copy"
+            android:text="Copy"
+            android:textAlignment="textEnd"
+            android:textColor="#2C731C"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_view_pass"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_Card"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="5dp"
+            android:background="#00FFFFFF"
+            android:backgroundTint="#00FFFFFF" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

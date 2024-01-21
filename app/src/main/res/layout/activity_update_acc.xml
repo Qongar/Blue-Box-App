@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateAcc">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/category_title_update1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="0dp"
+                android:text="E-Mail" />
+
+            <ImageView
+                android:id="@+id/img_Card_update1"
+                android:layout_width="130.50dp"
+                android:layout_height="97.25dp"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_below="@+id/category_title_update1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/e_mail" />
+
+            <TextView
+                android:id="@+id/txt_Hid_Acc_update1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_Card_update1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/img_Card_update1"
+                android:hint="Account Name"
+                android:textSize="20sp" />
+            <!--
+            android:maxLength="14"
+            android:ellipsize="end"
+            android:maxLines="1"
+            -->
+
+            <TextView
+                android:id="@+id/txt_Hid_Pass_update1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_Card_update1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_toRightOf="@+id/img_Card_update1"
+                android:hint="Password"
+                android:textSize="20sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_title_update1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                android:layout_below="@+id/img_Card_update1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:ems="10">
+                <EditText
+                    android:id="@+id/edt_txt_title_update1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Title"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_acc_update1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:errorEnabled="true"
+                android:layout_below="@id/input_layout_title_update1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="7dp"
+                android:ems="10">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_txt_acc_update1"
+                    android:hint="Account"
+                    android:inputType="textPersonName" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_pass_update1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxBackgroundColor="@color/white"
+                app:passwordToggleEnabled="true"
+                app:errorEnabled="true"
+                app:passwordToggleTint="#4F8BBA"
+                android:layout_below="@id/input_layout_acc_update1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:ems="10">
+                <EditText
+                    android:id="@+id/edt_txt_pass_update1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TableRow
+        android:id="@+id/tableRow_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Generate Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/cardLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/cardLayout3">
+
+        <CheckBox
+            android:id="@+id/checkBox_number_update1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numbers" />
+
+        <CheckBox
+            android:id="@+id/checkBox_uppercase_update1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uppercase" />
+
+        <CheckBox
+            android:id="@+id/checkBox_punctuation_update1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symbols" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/btn_generatePass_update1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="1dp"
+        android:text="Generate Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tableRow_checkbox"
+        app:layout_constraintTop_toBottomOf="@+id/tableRow_checkbox" />
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="1dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_generatePass_update1"
+        app:layout_constraintTop_toBottomOf="@+id/btn_generatePass_update1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
